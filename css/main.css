@@ -548,9 +548,18 @@ ol {
 .category__wrap {
   margin-bottom: 8.8rem;
 }
+.title_icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.6rem;
+}
+.category-icon:hover {
+  cursor: pointer;
+}
 .category__wrap-title {
   color: var(--grey);
-  margin-bottom: 5.6rem;
 }
 .category__cards {
   display: grid;
