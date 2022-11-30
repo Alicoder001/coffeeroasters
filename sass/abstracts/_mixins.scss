@@ -1,0 +1,32 @@
+// Media Queries
+@mixin responsive($breackpoint) {
+	@if $breackpoint == table {
+		@media only screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@if $breackpoint == min-table {
+		@media only screen and (max-width: 650px) {
+			@content;
+		}
+	}
+	@if $breackpoint == max-mobile {
+		@media only screen and (max-width: 500px) {
+			@content;
+		}
+	}
+	@if $breackpoint == mobile {
+		@media only screen and (max-width: 375px) {
+			@content;
+		}
+	}
+}
+	
+
+
+@media (max-width: 500px) {
+	.product__item {
+		display: flex;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,32 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: $subtitle__font-size;
+	line-height: $subtitle__line-height;
+	font-family: $subtitle__font-family;
+	font-weight: $main__font-weight;
+	color: $second-color;
+}
+.title {
+	font-family: $title__font-family;
+	font-weight: $second__font-weight;
+	font-size: $h2__font-size;
+	line-height: $h2__line-height;
+	color: $ligt-cream;
+}
+.subtitle {
+	font-weight: $main__font-weight;
+	font-size: $subtitle__font-size;
+	line-height: $subtitle__line-height;
+}
+.btn {
+	color: white;
+	background-color: $main-color;
+	border: none;
+	border-radius: 0.6rem;
+	font-family: $title__font-family;
+	font-weight: $second__font-weight;
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+}

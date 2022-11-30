@@ -1,0 +1,17 @@
+.header {
+	padding: 4.5rem 0;
+	.header__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include responsive(min-table) {
+			padding: 0 4rem;
+		}
+	}
+	&-btn {
+		display: none;
+		@include responsive(min-table) {
+			display: block;
+		}
+	}
+}
