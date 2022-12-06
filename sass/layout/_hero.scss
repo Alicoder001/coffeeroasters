@@ -1,0 +1,45 @@
+.hero {
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+	&__block {
+		background-image: url("../images/png/hero.png");
+		width: 100%;
+	}
+
+	margin-bottom: 26.2rem;
+	&__title {
+		margin-bottom: 3.2rem;
+		width: 49.3rem;
+		@include responsive(tablet) {
+			width: 32.9rem;
+		}
+
+		@include responsive(min-phone) {
+			width: 74vw;
+		}
+		@include responsive(phone) {
+			width: 76vw;
+		}
+	}
+	&__subtitle {
+		margin-bottom: 5.6rem;
+		width: 44.5rem;
+		color: $light-color;
+		opacity: 0.8;
+		@include responsive(tablet) {
+			width: 39.8rem;
+		}
+
+		@include responsive(min-tablet) {
+			width: 39.8rem;
+		}
+		@include responsive(max-phone) {
+			width: 70vw;
+		}
+		@include responsive(min-phone) {
+			width: 95%;
+		}
+	}
+}

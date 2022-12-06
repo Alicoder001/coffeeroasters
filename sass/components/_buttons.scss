@@ -1,0 +1,23 @@
+.header-btn {
+	display: none;
+	@include responsive(max-phone) {
+		display: inline-block;
+	}
+}
+.btn {
+	width: 21.7rem;
+	height: 5.8rem;
+	font-family: $title_font-family;
+	font-weight: 900;
+	font-size: 1.8rem;
+	line-height: 1.39;
+	background-color: $main_btn-color;
+	display: inline-block;
+	color: $light-color;
+	border-radius: 6px;
+	text-align: center;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: $btn-hover-color;
+}

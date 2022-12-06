@@ -1,0 +1,52 @@
+.works {
+	.container {
+		padding: 0 16.5rem;
+		margin-bottom: 20rem;
+	}
+	&__title {
+		margin-bottom: 8rem;
+		font-size: $h4_font-size;
+		line-height: 1.33;
+		color: $grey-color;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(22.3rem, 1fr));
+		justify-content: space-between;
+
+		margin-bottom: 6.4rem;
+	}
+	&__item-number {
+		color: $pale-orange;
+		margin-bottom: 3.8rem;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item:not(:nth-child(3)) {
+		border-top: 2px solid $pale-orange;
+	}
+	&__item-title {
+		width: 25.5rem;
+		@include responsive(max-tablet) {
+			width: 22.3rem;
+		}
+	}
+	&__item-subtitle {
+		width: 28.5rem;
+		@include responsive(max-tablet) {
+			width: 22.3rem;
+		}
+	}
+}
+
+.circle {
+	margin-top: -1.55rem;
+	width: 3.1rem;
+	height: 3.1rem;
+	border: 2px solid #0e8784;
+	background-color: white;
+	border-radius: 50%;
+	margin-bottom: 4.8rem;
+}

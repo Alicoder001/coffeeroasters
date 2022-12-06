@@ -1,0 +1,39 @@
+body {
+	font-size: $subt_font-size;
+	line-height: 1.62;
+	font-family: $subt_font-family;
+	font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: $title_font-family;
+	color: $title-color;
+	font-weight: 900;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: $h1_font-size;
+	line-height: 1;
+	color: $light-color;
+	@include responsive(tablet) {
+		font-size: 4.8rem;
+	}
+	@include responsive(max-phone) {
+		font-size: 4rem;
+	}
+}
+h2 {
+	font-size: $h2_font-size;
+	line-height: 1.2;
+}
+h3 {
+	font-size: $h3_font-size;
+	line-height: 1.12;
+}
+h4 {
+	font-size: $h4_font-size;
+	line-height: 1.33;
+}

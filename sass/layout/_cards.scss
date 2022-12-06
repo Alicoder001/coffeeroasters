@@ -1,0 +1,75 @@
+.cards {
+	.container {
+		padding: 35.8rem 16.5rem 0;
+		position: relative;
+		margin-bottom: 20rem;
+	}
+	&__block {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		text-align: center;
+		z-index: -1;
+	}
+	&__wrapper {
+		width: 88.8%;
+		margin: auto;
+		height: 57.7rem;
+		top: 0.6%;
+		left: 8rem;
+		border-radius: 10px;
+		background-color: #2c343e;
+		padding: 10rem 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__info {
+		width: 54rem;
+	}
+	&__title {
+		font-size: $h2_font-size;
+		margin-bottom: 3.2rem;
+		color: $light-color;
+	}
+	&__subtitle {
+		color: $light-color;
+		opacity: 0.8;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 7.2rem 0 4.8rem;
+		background-color: $primary_color;
+		border-radius: 8px;
+	}
+	&__item-img {
+		margin-bottom: 5.6rem;
+	}
+	&__item-title {
+		margin-bottom: 2.4rem;
+		font-size: $h4_font-size;
+		color: white;
+		text-align: center;
+	}
+	&__item-subtitle {
+		width: 25.5rem;
+		color: white;
+		text-align: center;
+	}
+}
+.shipping {
+	margin-bottom: 6.7rem;
+	padding-top: 1.1rem;
+}

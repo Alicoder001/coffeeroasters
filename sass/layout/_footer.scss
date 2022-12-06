@@ -1,0 +1,35 @@
+.footer {
+	.container {
+		padding: 4.7rem 16.5rem;
+		@include responsive(tablet) {
+			padding: 4.7rem 4rem;
+		}
+		display: flex;
+		justify-content: space-between;
+		background-color: #2c343e;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+		gap: 3.2rem;
+
+		padding-right: 24.4rem;
+	}
+	&__link {
+		font-size: $nav_font-size;
+		line-height: 1.25;
+		letter-spacing: 0.92;
+		color: $grey-color;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&__link:hover {
+		color: $light-color;
+	}
+	&__icon-list {
+		display: flex;
+		justify-content: space-between;
+		gap: 2.3rem;
+	}
+}

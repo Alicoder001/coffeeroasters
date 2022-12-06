@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+body {
+	font-size: 1.6rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 8rem;
+	margin: 0 auto;
+	@include responsive(tablet) {
+		padding: 0 4rem;
+	}
+}
+
+.main {
+	flex-grow: 1;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.block {
+	padding: 11.6rem 8.5rem;
+	border-radius: 1rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	@include responsive(tablet) {
+		padding: 10.3rem 5.8rem;
+	}
+	@include responsive(max-phone) {
+		padding: 10.3rem 2.3rem;
+	}
+	@include responsive(min-phone) {
+		text-align: center;
+	}
+}
