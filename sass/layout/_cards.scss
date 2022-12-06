@@ -3,6 +3,12 @@
 		padding: 35.8rem 16.5rem 0;
 		position: relative;
 		margin-bottom: 20rem;
+		@include responsive(max-tablet) {
+			padding: 35.8rem 0 0;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
 	}
 	&__block {
 		position: absolute;
@@ -28,22 +34,39 @@
 	}
 	&__info {
 		width: 54rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	&__title {
 		font-size: $h2_font-size;
 		margin-bottom: 3.2rem;
 		color: $light-color;
+		@include responsive(min-phone) {
+			font-size: 2.8rem;
+			line-height: 1;
+		}
 	}
 	&__subtitle {
+		text-align: center;
 		color: $light-color;
 		opacity: 0.8;
+		@include responsive(tablet) {
+			width: 70vw;
+		}
 	}
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-		align-items: center;
-		justify-content: center;
+
 		gap: 3rem;
+		@include responsive(max-tablet) {
+			display: flex;
+			flex-direction: column;
+			width: 70vw;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 	&__item {
 		display: flex;
@@ -53,6 +76,17 @@
 		padding: 7.2rem 0 4.8rem;
 		background-color: $primary_color;
 		border-radius: 8px;
+		@include responsive(max-tablet) {
+			width: 100%;
+			align-items: center;
+			padding: 4.1rem 5rem 4.8rem;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		@include responsive(min-tablet) {
+			flex-direction: column;
+			padding: 4.1rem 0 4.8rem;
+		}
 	}
 	&__item-img {
 		margin-bottom: 5.6rem;
@@ -67,6 +101,12 @@
 		width: 25.5rem;
 		color: white;
 		text-align: center;
+		@include responsive(max-tablet) {
+			width: 34.4rem;
+		}
+		@include responsive(tablet) {
+			width: 100%;
+		}
 	}
 }
 .shipping {
