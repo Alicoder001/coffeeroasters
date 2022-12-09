@@ -1,11 +1,27 @@
 @mixin responsive($breakpoint) {
+	@if $breakpoint == pro-max-tablet {
+		@media screen and (max-width: 1314px) and (min-width: 830px) {
+			@content;
+		}
+	}
+
 	@if $breakpoint == max-tablet {
 		@media screen and (max-width: 1200px) {
 			@content;
 		}
 	}
+	@if $breakpoint == max-max-tablet {
+		@media screen and (max-width: 820px) {
+			@content;
+		}
+	}
 	@if $breakpoint == tablet {
 		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@if $breakpoint == tablet-med {
+		@media screen and (max-width: 700px) {
 			@content;
 		}
 	}

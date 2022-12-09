@@ -2,9 +2,13 @@
 	@include responsive(max-phone) {
 		display: none;
 	}
+
 	&__list {
 		display: flex;
 		column-gap: 3.3rem;
+		@include responsive(min-tablet) {
+			column-gap: 2.2rem;
+		}
 	}
 	&__link {
 		font-size: $nav_font-size;

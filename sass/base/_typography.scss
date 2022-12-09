@@ -23,15 +23,26 @@ h1 {
 	}
 	@include responsive(max-phone) {
 		font-size: 4rem;
+		line-height: 1;
 	}
 }
 h2 {
 	font-size: $h2_font-size;
 	line-height: 1.2;
+	@include responsive(tablet) {
+		font-size: 3.2rem;
+	}
+	@include responsive(max-phone) {
+		font-size: 2.8rem;
+		line-height: 1;
+	}
 }
 h3 {
 	font-size: $h3_font-size;
 	line-height: 1.12;
+	@include responsive(tablet) {
+		font-size: 2.8rem;
+	}
 }
 h4 {
 	font-size: $h4_font-size;
